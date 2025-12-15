@@ -265,5 +265,6 @@ document.querySelectorAll('.indicator').forEach(indicator => {
         const stepDiff = targetStep - currentStep;
         changeStep(stepDiff);
     });
-});}); // End 
-of DOMContentLoaded
+});
+
+}); // End of DOMContentLoaded
