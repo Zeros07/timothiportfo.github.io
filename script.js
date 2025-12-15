@@ -1,3 +1,6 @@
+// Wait for DOM to be ready
+document.addEventListener('DOMContentLoaded', function() {
+    
 // Language Switcher Functionality
 const langToggle = document.getElementById('lang-toggle');
 const langCard = document.querySelector('.lang-card');
@@ -262,4 +265,5 @@ document.querySelectorAll('.indicator').forEach(indicator => {
         const stepDiff = targetStep - currentStep;
         changeStep(stepDiff);
     });
-});
+});}); // End 
+of DOMContentLoaded
