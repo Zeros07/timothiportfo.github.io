@@ -78,13 +78,16 @@
                 <div class="hero-image">
                     <div class="profile-card">
                         <div class="profile-avatar">
-                            <i class="fas fa-user-circle"></i>
+                            <img src="images/1000182974.jpg" alt="Timothi Lois Profile Picture" class="profile-img">
+                            <div class="profile-border"></div>
                         </div>
                         <div class="floating-icons">
-                            <i class="fab fa-python"></i>
-                            <i class="fab fa-js-square"></i>
-                            <i class="fab fa-html5"></i>
-                            <i class="fab fa-css3-alt"></i>
+                            <i class="fab fa-python" title="Python"></i>
+                            <i class="fab fa-php" title="PHP"></i>
+                            <i class="fab fa-react" title="React"></i>
+                            <i class="fab fa-node-js" title="Node.js"></i>
+                            <i class="fab fa-vuejs" title="Vue.js"></i>
+                            <i class="fab fa-golang" title="Go"></i>
                         </div>
                     </div>
                 </div>
@@ -102,23 +105,23 @@
                 <div class="skills-grid">
                     <div class="skill-item">
                         <i class="fab fa-python"></i>
-                        <h3 data-en="Python" data-id="Python">Python</h3>
-                        <p data-en="Computer Vision, Automation" data-id="Computer Vision, Automation">Computer Vision, Automation</p>
+                        <h3 data-en="Python Development" data-id="Python Development">Python Development</h3>
+                        <p data-en="Computer Vision, Automation, Backend" data-id="Computer Vision, Automation, Backend">Computer Vision, Automation, Backend</p>
                     </div>
                     <div class="skill-item">
-                        <i class="fas fa-code"></i>
-                        <h3 data-en="Web Development" data-id="Web Development">Web Development</h3>
-                        <p data-en="HTML, CSS, JavaScript" data-id="HTML, CSS, JavaScript">HTML, CSS, JavaScript</p>
+                        <i class="fab fa-react"></i>
+                        <h3 data-en="Frontend Frameworks" data-id="Frontend Frameworks">Frontend Frameworks</h3>
+                        <p data-en="React, Vue.js, Modern JavaScript" data-id="React, Vue.js, Modern JavaScript">React, Vue.js, Modern JavaScript</p>
                     </div>
                     <div class="skill-item">
-                        <i class="fas fa-eye"></i>
-                        <h3 data-en="Computer Vision" data-id="Computer Vision">Computer Vision</h3>
-                        <p data-en="OpenCV, MediaPipe" data-id="OpenCV, MediaPipe">OpenCV, MediaPipe</p>
+                        <i class="fab fa-node-js"></i>
+                        <h3 data-en="Backend Development" data-id="Backend Development">Backend Development</h3>
+                        <p data-en="Node.js, PHP, API Development" data-id="Node.js, PHP, API Development">Node.js, PHP, API Development</p>
                     </div>
                     <div class="skill-item">
-                        <i class="fas fa-robot"></i>
-                        <h3 data-en="Automation" data-id="Automation">Automation</h3>
-                        <p data-en="PyAutoGUI, System Integration" data-id="PyAutoGUI, System Integration">PyAutoGUI, System Integration</p>
+                        <i class="fab fa-golang"></i>
+                        <h3 data-en="System Programming" data-id="System Programming">System Programming</h3>
+                        <p data-en="Go, Performance Optimization" data-id="Go, Performance Optimization">Go, Performance Optimization</p>
                     </div>
                 </div>
             </div>
@@ -148,23 +151,25 @@
                     <!-- Screenshot Showcase -->
                     <div class="screenshot-showcase">
                         <div class="screenshot-container">
-                            <div class="screenshot-placeholder main-screenshot">
-                                <i class="fas fa-image"></i>
-                                <p data-en="Main Screenshot" data-id="Screenshot Utama">Screenshot Utama</p>
-                                <small data-en="Display when project is running" data-id="Tampilan saat project berjalan">Tampilan saat project berjalan</small>
+                            <div class="screenshot-main">
+                                <img src="images/Start.png" alt="Hand Gesture Media Control - Main Interface" class="main-screenshot-img">
+                                <div class="screenshot-overlay">
+                                    <p data-en="Application Startup" data-id="Startup Aplikasi">Startup Aplikasi</p>
+                                    <small data-en="Initial interface when application starts" data-id="Interface awal saat aplikasi dimulai">Interface awal saat aplikasi dimulai</small>
+                                </div>
                             </div>
                             <div class="screenshot-grid">
                                 <div class="screenshot-mini">
-                                    <i class="fas fa-hand-paper"></i>
-                                    <span data-en="Hand Detection" data-id="Hand Detection">Hand Detection</span>
+                                    <img src="images/Deteksi tangan.png" alt="Hand Detection" class="mini-screenshot-img">
+                                    <span data-en="Hand Detection" data-id="Deteksi Tangan">Deteksi Tangan</span>
                                 </div>
                                 <div class="screenshot-mini">
-                                    <i class="fas fa-desktop"></i>
-                                    <span data-en="Interface" data-id="Interface">Interface</span>
+                                    <img src="images/control.png" alt="Media Control Interface" class="mini-screenshot-img">
+                                    <span data-en="Media Control" data-id="Kontrol Media">Kontrol Media</span>
                                 </div>
                                 <div class="screenshot-mini">
-                                    <i class="fas fa-cogs"></i>
-                                    <span data-en="Settings" data-id="Settings">Settings</span>
+                                    <img src="images/Implementasi media.png" alt="Media Implementation" class="mini-screenshot-img">
+                                    <span data-en="Implementation" data-id="Implementasi">Implementasi</span>
                                 </div>
                             </div>
                         </div>
@@ -233,19 +238,18 @@
                     <p class="project-description" data-en="A responsive and modern personal portfolio website, built with vanilla HTML, CSS, and JavaScript to showcase my projects and capabilities." data-id="Website portfolio pribadi yang responsif dan modern, dibangun dengan HTML, CSS, dan JavaScript vanilla untuk menampilkan proyek-proyek dan kemampuan saya.">Website portfolio pribadi yang responsif dan modern, dibangun dengan HTML, CSS, dan JavaScript vanilla untuk menampilkan proyek-proyek dan kemampuan saya.</p>
                     
                     <!-- Live Preview -->
-                    <div class="live-preview">
-                        <div class="browser-mockup">
-                            <div class="browser-header">
-                                <div class="browser-buttons">
-                                    <span></span><span></span><span></span>
+                    <div class="portfolio-preview-section">
+                        <div class="simple-browser" onclick="window.open('https://zeros07.github.io', '_blank')" title="Click to open live website">
+                            <div class="browser-top">
+                                <div class="browser-dots">
+                                    <span class="dot red"></span>
+                                    <span class="dot yellow"></span>
+                                    <span class="dot green"></span>
                                 </div>
-                                <div class="browser-url">zeros07.github.io</div>
+                                <div class="browser-address">zeros07.github.io</div>
                             </div>
-                            <div class="browser-content">
-                                <div class="preview-placeholder">
-                                    <i class="fas fa-desktop"></i>
-                                    <p data-en="Live Website Preview" data-id="Live Website Preview">Live Website Preview</p>
-                                </div>
+                            <div class="browser-screen">
+                                <img src="images/portoweb.png" alt="Portfolio Preview" class="portfolio-img">
                             </div>
                         </div>
                     </div>
@@ -360,7 +364,11 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-left">
-                    <p>&copy; 2025 Timothi Lois</p>
+                    <div class="footer-profile">
+                        <div class="footer-info">
+                            <p>&copy; 2025 Timothi Lois.</p>
+                        </div>
+                    </div>
                 </div>
                 <div class="footer-right">
                     <div class="social-links">
@@ -383,10 +391,8 @@
             <div class="screenshot-walkthrough">
                 <div class="walkthrough-step active" data-step="1">
                     <div class="step-screenshot">
-                        <div class="screenshot-placeholder large">
-                            <i class="fas fa-play-circle"></i>
-                            <p>Screenshot 1: Aplikasi Startup</p>
-                            <small>Tampilan awal saat aplikasi dijalankan</small>
+                        <div class="modal-screenshot">
+                            <img src="images/Start.png" alt="Application Startup" class="modal-screenshot-img">
                         </div>
                     </div>
                     <div class="step-explanation">
@@ -413,10 +419,8 @@ hands = mp_hands.Hands()</code></pre>
 
                 <div class="walkthrough-step" data-step="2">
                     <div class="step-screenshot">
-                        <div class="screenshot-placeholder large">
-                            <i class="fas fa-hand-paper"></i>
-                            <p>Screenshot 2: Hand Detection Active</p>
-                            <small>Sistem mendeteksi dan tracking tangan</small>
+                        <div class="modal-screenshot">
+                            <img src="images/Deteksi tangan.png" alt="Hand Detection Active" class="modal-screenshot-img">
                         </div>
                     </div>
                     <div class="step-explanation">
@@ -450,10 +454,8 @@ hands = mp_hands.Hands()</code></pre>
 
                 <div class="walkthrough-step" data-step="3">
                     <div class="step-screenshot">
-                        <div class="screenshot-placeholder large">
-                            <i class="fas fa-volume-up"></i>
-                            <p>Screenshot 3: Gesture Recognition</p>
-                            <small>Berbagai gesture yang dikenali sistem</small>
+                        <div class="modal-screenshot">
+                            <img src="images/control.png" alt="Gesture Recognition" class="modal-screenshot-img">
                         </div>
                     </div>
                     <div class="step-explanation">
@@ -498,10 +500,8 @@ hands = mp_hands.Hands()</code></pre>
 
                 <div class="walkthrough-step" data-step="4">
                     <div class="step-screenshot">
-                        <div class="screenshot-placeholder large">
-                            <i class="fas fa-desktop"></i>
-                            <p>Screenshot 4: System Integration</p>
-                            <small>Integrasi dengan media player sistem</small>
+                        <div class="modal-screenshot">
+                            <img src="images/Implementasi media.png" alt="System Integration" class="modal-screenshot-img">
                         </div>
                     </div>
                     <div class="step-explanation">
