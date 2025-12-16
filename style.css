@@ -1546,6 +1546,19 @@ NSHOT SHOWCASE */
     .walkthrough-nav {
         flex-direction: column;
         gap: 1rem;
+        padding: 1rem 0;
+    }
+    
+    .nav-btn {
+        padding: 0.6rem 1rem;
+        font-size: 0.8rem;
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .step-indicators {
+        justify-content: center;
+        order: -1;
     }
     
     .large-modal {
@@ -3053,4 +3066,109 @@ body.light-theme .browser-screen {
 
 .browser-mockup {
     display: none;
+}/* MO
+BILE RESPONSIVE FIXES */
+@media (max-width: 480px) {
+    /* Installation guide mobile fixes */
+    .installation-guide {
+        padding: 1rem;
+        margin: 1rem 0;
+    }
+    
+    .installation-guide h4 {
+        font-size: 1rem;
+        margin-bottom: 1rem;
+    }
+    
+    .install-step {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.75rem;
+        padding: 0.75rem;
+    }
+    
+    .install-number {
+        width: 28px;
+        height: 28px;
+        font-size: 0.9rem;
+        align-self: center;
+    }
+    
+    .install-content {
+        width: 100%;
+    }
+    
+    .install-content h5 {
+        font-size: 0.9rem;
+        text-align: center;
+        margin-bottom: 0.5rem;
+    }
+    
+    .install-content code {
+        padding: 0.4rem 0.75rem;
+        font-size: 0.75rem;
+        word-break: break-all;
+        white-space: pre-wrap;
+        line-height: 1.4;
+    }
+    
+    /* Modal responsive fixes */
+    .modal-content {
+        width: 95%;
+        margin: 5% auto;
+        padding: 1rem;
+        max-height: 90vh;
+    }
+    
+    .large-modal {
+        width: 98%;
+        margin: 1% auto;
+    }
+    
+    /* Walkthrough step responsive */
+    .walkthrough-step {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    
+    .step-explanation {
+        padding: 1rem;
+    }
+    
+    .step-explanation h4 {
+        font-size: 1rem;
+    }
+    
+    /* Navigation buttons mobile */
+    .nav-btn {
+        min-height: 44px; /* Touch target size */
+        font-size: 0.85rem;
+    }
+    
+    .step-indicators {
+        margin: 0.5rem 0;
+    }
+    
+    .indicator {
+        width: 14px;
+        height: 14px;
+        margin: 0 0.25rem;
+    }
+}
+
+/* Extra small screens */
+@media (max-width: 360px) {
+    .install-content code {
+        font-size: 0.7rem;
+        padding: 0.3rem 0.5rem;
+    }
+    
+    .nav-btn {
+        padding: 0.5rem 0.75rem;
+        font-size: 0.8rem;
+    }
+    
+    .installation-guide h4 {
+        font-size: 0.9rem;
+    }
 }
