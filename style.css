@@ -3297,3 +3297,451 @@ BILE RESPONSIVE FIXES */
         font-size: 0.9rem;
     }
 }
+
+/* MOBILE PORTFOLIO POLISH */
+@media (max-width: 900px) {
+    .container {
+        width: 94%;
+        padding: 0 12px;
+    }
+
+    .navbar {
+        padding: 0.7rem 0;
+    }
+
+    .navbar .container {
+        flex-wrap: wrap;
+        gap: 0.75rem;
+    }
+
+    .nav-brand,
+    .language-switcher {
+        flex: 0 0 auto;
+    }
+
+    .nav-menu {
+        order: 3;
+        width: 100%;
+        display: flex;
+        gap: 0.45rem;
+        overflow-x: auto;
+        padding: 0.2rem 0 0.15rem;
+        scrollbar-width: none;
+    }
+
+    .nav-menu::-webkit-scrollbar {
+        display: none;
+    }
+
+    .nav-menu li {
+        flex: 1 0 auto;
+    }
+
+    .nav-menu a {
+        display: block;
+        min-width: 76px;
+        padding: 0.5rem 0.75rem;
+        border: 1px solid #334155;
+        border-radius: 8px;
+        background: rgba(15, 23, 42, 0.55);
+        font-size: 0.82rem;
+        text-align: center;
+        white-space: nowrap;
+    }
+
+    body.light-theme .nav-menu a {
+        background: rgba(255, 255, 255, 0.72);
+        border-color: #cbd5e1;
+        color: #334155;
+    }
+
+    body.light-theme .nav-menu a:hover {
+        background: #e0f2fe;
+        color: #1d4ed8;
+    }
+
+    .theme-text {
+        display: none;
+    }
+
+    .theme-toggle-slider {
+        width: 52px;
+        height: 28px;
+    }
+
+    .theme-toggle-button {
+        width: 20px;
+        height: 20px;
+    }
+
+    .theme-toggle-input:checked + .theme-toggle-label .theme-toggle-button {
+        transform: translateX(24px);
+    }
+
+    .hero {
+        min-height: auto;
+        padding: 150px 0 56px;
+    }
+
+    .hero-content {
+        gap: 1.75rem;
+    }
+
+    .hero-title {
+        font-size: clamp(2.05rem, 10vw, 3rem);
+        margin-bottom: 1rem;
+    }
+
+    .tagline {
+        font-size: 1.05rem;
+        line-height: 1.55;
+    }
+
+    .description {
+        font-size: 0.96rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .hero-buttons {
+        gap: 0.75rem;
+    }
+
+    .hero-buttons .button {
+        flex: 1 1 150px;
+        justify-content: center;
+        padding: 0.78rem 1rem;
+    }
+
+    .profile-card {
+        padding: 1rem;
+        border-radius: 14px;
+        max-width: 280px;
+        margin: 0 auto;
+    }
+
+    .profile-img {
+        width: min(58vw, 190px);
+        height: min(58vw, 190px);
+    }
+
+    .floating-icons {
+        gap: 0.6rem;
+        padding: 0.75rem;
+    }
+
+    .floating-icons i {
+        width: 34px;
+        height: 34px;
+        font-size: 1rem;
+    }
+
+    .section {
+        padding: 56px 0;
+    }
+
+    .section-title {
+        font-size: clamp(1.75rem, 7vw, 2.25rem);
+        margin-bottom: 1.5rem;
+        line-height: 1.2;
+    }
+
+    .projects-intro {
+        margin: -0.25rem auto 1.5rem;
+        font-size: 0.95rem;
+    }
+
+    .projects-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 0.9rem;
+    }
+
+    .project-card {
+        min-height: 250px;
+        padding: 1rem;
+    }
+
+    .project-card h3 {
+        font-size: 1rem;
+        line-height: 1.3;
+    }
+
+    .project-icon {
+        width: 42px;
+        height: 42px;
+    }
+
+    .status-badge {
+        padding: 0.2rem 0.55rem;
+        font-size: 0.7rem;
+    }
+
+    .project-description {
+        font-size: 0.86rem;
+        -webkit-line-clamp: 4;
+    }
+
+    .tech-stack {
+        gap: 0.35rem;
+    }
+
+    .tech-tag {
+        padding: 0.22rem 0.55rem;
+        font-size: 0.72rem;
+    }
+
+    .project-detail-trigger {
+        min-height: 44px;
+        padding: 0.68rem 0.75rem;
+        font-size: 0.88rem;
+    }
+
+    .project-detail-modal .modal-content,
+    .modal-content.large-modal,
+    .large-modal {
+        width: min(96%, 720px);
+        max-height: 88vh;
+        margin: 6vh auto;
+        padding: 1.1rem;
+        border-radius: 12px;
+    }
+
+    .project-detail-body .project-card {
+        display: block;
+    }
+
+    .project-detail-body .project-header {
+        padding-right: 2rem;
+    }
+
+    .project-detail-body .project-card h3 {
+        font-size: 1.35rem;
+    }
+
+    .project-detail-body .tech-stack {
+        margin: 1rem 0;
+    }
+
+    .project-detail-body .project-links {
+        gap: 0.7rem;
+    }
+
+    .project-detail-body .project-links .button {
+        flex: 1 1 150px;
+        justify-content: center;
+        padding: 0.75rem 0.85rem;
+    }
+
+    .screenshot-showcase {
+        padding: 1rem;
+        margin: 1rem 0;
+        border-radius: 10px;
+    }
+
+    .screenshot-container {
+        display: block;
+    }
+
+    .screenshot-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 0.55rem;
+    }
+
+    .mini-screenshot-img {
+        height: 88px;
+    }
+
+    .screenshot-mini span {
+        padding: 0.5rem 0.35rem;
+        font-size: 0.7rem;
+    }
+}
+
+@media (max-width: 560px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    .container {
+        width: 100%;
+        padding: 0 16px;
+    }
+
+    .navbar .container {
+        padding: 0 12px;
+    }
+
+    .nav-menu a {
+        min-width: 72px;
+        padding: 0.46rem 0.62rem;
+        font-size: 0.78rem;
+    }
+
+    .language-switcher {
+        margin-left: auto;
+    }
+
+    .hero {
+        padding: 140px 0 46px;
+    }
+
+    .greeting {
+        font-size: 1rem;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+    }
+
+    .hero-buttons .button {
+        width: 100%;
+        flex-basis: auto;
+    }
+
+    .skills-grid {
+        gap: 0.9rem;
+    }
+
+    .skill-item {
+        padding: 1.25rem;
+        border-radius: 8px;
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .project-card {
+        min-height: 230px;
+        border-radius: 8px;
+    }
+
+    .project-card:hover {
+        transform: translateY(-4px);
+    }
+
+    .project-description {
+        -webkit-line-clamp: 3;
+    }
+
+    .project-detail-modal {
+        padding: 0;
+    }
+
+    .project-detail-modal .modal-content,
+    .modal-content.large-modal,
+    .large-modal {
+        width: 100%;
+        max-height: 92vh;
+        margin: 8vh 0 0;
+        border-radius: 16px 16px 0 0;
+        padding: 1rem;
+    }
+
+    .close {
+        right: 0.8rem;
+        top: 0.55rem;
+        width: 40px;
+        height: 40px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 999px;
+        background: rgba(15, 23, 42, 0.72);
+        line-height: 1;
+    }
+
+    body.light-theme .close {
+        background: rgba(255, 255, 255, 0.88);
+        color: #334155;
+        border: 1px solid #cbd5e1;
+    }
+
+    .project-detail-body .project-card h3 {
+        font-size: 1.2rem;
+        padding-right: 2.25rem;
+    }
+
+    .project-detail-body .project-description {
+        font-size: 0.93rem;
+    }
+
+    .project-detail-body .project-links {
+        flex-direction: column;
+    }
+
+    .project-detail-body .project-links .button {
+        width: 100%;
+        flex-basis: auto;
+    }
+
+    .project-features {
+        padding: 1rem;
+    }
+
+    .project-features li {
+        align-items: flex-start;
+        font-size: 0.88rem;
+    }
+
+    .steps {
+        gap: 0.65rem;
+    }
+
+    .step {
+        padding: 0.85rem;
+    }
+
+    .screenshot-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .mini-screenshot-img {
+        height: 150px;
+    }
+
+    .screenshot-overlay {
+        position: static;
+        background: #111827;
+        padding: 0.85rem;
+    }
+
+    .browser-top {
+        gap: 0.55rem;
+    }
+
+    .browser-address {
+        font-size: 0.68rem;
+        padding: 0.35rem 0.5rem;
+    }
+
+    .contact-description {
+        font-size: 1rem;
+    }
+
+    .contact-item {
+        width: 100%;
+        justify-content: center;
+        padding: 0.85rem 1rem;
+        word-break: break-word;
+    }
+}
+
+@media (max-width: 380px) {
+    .nav-menu a {
+        min-width: 66px;
+        padding: 0.42rem 0.5rem;
+        font-size: 0.72rem;
+    }
+
+    .hero {
+        padding-top: 132px;
+    }
+
+    .project-card {
+        padding: 0.9rem;
+    }
+
+    .tech-tag {
+        font-size: 0.68rem;
+    }
+}
