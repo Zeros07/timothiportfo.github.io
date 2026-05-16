@@ -754,6 +754,20 @@ footer {
     font-size: 0.9rem;
 }
 
+.footer-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 0.75rem;
+}
+
+.footer-contact-title {
+    color: #e2e8f0;
+    font-weight: 600;
+    font-size: 0.95rem;
+    letter-spacing: 0;
+}
+
 .social-links {
     display: flex;
     gap: 1rem;
@@ -811,6 +825,10 @@ footer {
     .footer-content {
         flex-direction: column;
         text-align: center;
+    }
+
+    .footer-right {
+        align-items: center;
     }
     
     .hero-buttons {
@@ -1941,6 +1959,10 @@ body.light-theme .footer-left .logo {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+}
+
+body.light-theme .footer-contact-title {
+    color: #f1f5f9;
 }
 
 /* Light theme modals */
