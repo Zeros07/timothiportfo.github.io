@@ -76,7 +76,7 @@ langToggle.addEventListener('change', function() {
 });
 
 function applyLanguage(lang) {
-    const elements = document.querySelectorAll('[data-en][data-id]');
+    const elements = document.querySelectorAll('[data-en][data-id]:not(.button):not(.section-title):not(.project-detail-trigger)');
     
     elements.forEach(element => {
         element.classList.add('lang-transition', 'fade-out');
@@ -98,7 +98,7 @@ function applyLanguage(lang) {
     });
 
     // Update button text specifically
-    const buttons = document.querySelectorAll('.button[data-en][data-id]');
+    const buttons = document.querySelectorAll('.button[data-en][data-id], .project-detail-trigger[data-en][data-id]');
     buttons.forEach(button => {
         const span = button.querySelector('span');
         if (span) {
@@ -226,6 +226,79 @@ window.addEventListener('click', function(e) {
             document.body.style.overflow = 'auto';
         }
     });
+});
+
+// Project detail modal
+const projectCards = document.querySelectorAll('.project-card');
+const projectDetailModal = document.createElement('div');
+projectDetailModal.id = 'project-detail-modal';
+projectDetailModal.className = 'modal project-detail-modal';
+projectDetailModal.innerHTML = `
+    <div class="modal-content large-modal">
+        <span class="close project-detail-close">&times;</span>
+        <div class="project-detail-body"></div>
+    </div>
+`;
+document.body.appendChild(projectDetailModal);
+
+const projectDetailBody = projectDetailModal.querySelector('.project-detail-body');
+
+function openProjectDetail(card) {
+    const detail = card.cloneNode(true);
+    detail.classList.add('animate-in');
+    detail.removeAttribute('tabindex');
+    detail.removeAttribute('role');
+    projectDetailBody.innerHTML = '';
+    projectDetailBody.appendChild(detail);
+    projectDetailModal.style.display = 'block';
+    document.body.style.overflow = 'hidden';
+}
+
+function closeProjectDetail() {
+    projectDetailModal.style.display = 'none';
+    projectDetailBody.innerHTML = '';
+    document.body.style.overflow = 'auto';
+}
+
+projectCards.forEach(card => {
+    card.setAttribute('tabindex', '0');
+    card.setAttribute('role', 'button');
+    card.addEventListener('click', function(e) {
+        if (e.target.closest('a')) return;
+        openProjectDetail(this);
+    });
+    card.addEventListener('keydown', function(e) {
+        if (e.key === 'Enter' || e.key === ' ') {
+            e.preventDefault();
+            openProjectDetail(this);
+        }
+    });
+});
+
+projectDetailModal.querySelector('.project-detail-close').addEventListener('click', closeProjectDetail);
+
+projectDetailModal.addEventListener('click', function(e) {
+    if (e.target === projectDetailModal) {
+        closeProjectDetail();
+        return;
+    }
+
+    const demoLink = e.target.closest('.demo-btn');
+    if (demoLink) {
+        e.preventDefault();
+        closeProjectDetail();
+        const targetModal = document.querySelector(demoLink.getAttribute('href'));
+        if (targetModal) {
+            targetModal.style.display = 'block';
+            document.body.style.overflow = 'hidden';
+        }
+    }
+});
+
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape' && projectDetailModal.style.display === 'block') {
+        closeProjectDetail();
+    }
 });
 
 // Screenshot Walkthrough Navigation
