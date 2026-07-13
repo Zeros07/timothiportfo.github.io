@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Timothi Lois | Web Developer Portfolio</title>
-    <link rel="stylesheet" href="style.css?v=20260609-dashboardit">
+    <link rel="stylesheet" href="style.css?v=20260713-redesign">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
@@ -13,6 +13,7 @@
     <nav class="navbar">
         <div class="container">
             <div class="nav-brand">
+                <a href="#home" class="nav-logo">TL.</a>
                 <div class="theme-switcher">
                     <input type="checkbox" id="theme-toggle" class="theme-toggle-input">
                     <label for="theme-toggle" class="theme-toggle-label">
@@ -63,6 +64,9 @@
                         <span class="wave">👋</span>
                     </h1>
                     <p class="tagline" data-en="A passionate <span class='highlight'>Web Developer</span> creating innovative digital solutions" data-id="Seorang <span class='highlight'>Web Developer</span> yang bersemangat dalam menciptakan solusi digital inovatif">Seorang <span class="highlight">Web Developer</span> yang bersemangat dalam menciptakan solusi digital inovatif</p>
+                    <div class="typed-role-line">
+                        <span id="typed-role" class="typed-role"></span>
+                    </div>
                     <p class="description" data-en="I build projects that solve real-world problems and interact with the physical world through modern technology." data-id="Saya membuat proyek-proyek yang memecahkan masalah nyata dan berinteraksi dengan dunia fisik melalui teknologi modern.">Saya membuat proyek-proyek yang memecahkan masalah nyata dan berinteraksi dengan dunia fisik melalui teknologi modern.</p>
                     <div class="hero-buttons">
                         <a href="#projects" class="button primary" data-en="View My Projects" data-id="Lihat Proyek Saya">
@@ -762,6 +766,9 @@ hands = mp_hands.Hands()</code></pre>
             </div>
         </div>
     </div>
+
+    <!-- Scroll to top -->
+    <button id="scroll-top" aria-label="Scroll to top"><i class="fas fa-chevron-up"></i></button>
 
     <script src="script.js"></script>
 
